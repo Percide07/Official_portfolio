@@ -13,7 +13,7 @@ export const Contact = () => {
         <div className="flex max-md:flex-col w-full gap-4 ">
                 <ContactCard 
                     className="flex-1"
-                    url="https://www.linkedin.com/in/josu%C3%A9-honhonou-b3570b1b6/" 
+                    url="https://www.linkedin.com/in/josu%C3%A9-percide-honhonou" 
                     name="HONHONOU" 
                     image={my_face.src} 
                     mediumImage="https://cdn-icons-png.flaticon.com/512/174/174857.png" 

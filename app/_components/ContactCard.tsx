@@ -9,11 +9,11 @@ export const ContactCard = (props:{
     mediumImage:string ; 
     name: string;
     description: string;
-    url?: string;
+    url: string;
     className?: string
 }) => {
     return (
-        <Link href={props.name} className={cn("w-full", props.className)}>
+        <Link href={props.url} className={cn("w-full", props.className)}>
             <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
                 <div className="relative w-10 h-10 ">
                     <img src={props.image} alt={props.name} className="w-10 h-10 rounded-full object-contain"/>

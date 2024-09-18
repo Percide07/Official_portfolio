@@ -11,34 +11,28 @@ export const Hero = async () => {
     return (
         <Section className="flex max-lg:flex-col items-start gap-4">
           <div className="flex-[3] w-full flex flex-col gap-2">
-            <h2 className="font-caption font-bold text-5xl text-primary">Josué HONHONOU</h2>
+            <h2 className="font-caption font-bold text-5xl text-primary">Josué P. HONHONOU</h2>
             <h3 className="text-3xl font-caption ">
-              Electronical Engineer and FullStack React / Java Spring Boot
-              Developer.
+              Electronics Engineer and Full Stack Developer (React, Java Spring Boot & MERN Stack).
             </h3>
             <p className="text-base">
-              I love creating content{" "}
+            Passionate about creating innovative user experiences, I leverage 
+            my web development skills to deliver elegant and efficient solutions for your projects. 
+            Originally from {" "}
+            <Code className="inline-flex items-center gap-1"> 
+                     Benin Republic
+            </Code>{" "}
+            and currently residing in {" "}
+            <Code className="inline-flex items-center gap-1"> 
+                     Morocco
+            </Code>, 
+            I stay up-to-date with the latest technology trends and adapt quickly to the evolving needs of your business. 
+            Additionally, I enjoy creating engaging content on{" "}
               <Link href="https://github.com/Percide07">
                 <Code className="inline-flex items-center gap-1"> 
-                    <LinkedinIcon size={16} className="inline"/> Linkedin
+                    <LinkedinIcon size={16} className="inline"/> LinkedIn
                 </Code>
-              </Link> {" "}
-
-              . I am from &nbsp;
-                <Code className="inline-flex items-center gap-1"> 
-                    {/* <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/langfr-338px-Flag_of_Benin.svg.png"
-                    style={{width:16, height:"auto"  }} 
-                    alt="morocco flag"/> {" "} */}
-                    Benin Republic
-                </Code>.
-
-              I am currently living in&nbsp;
-                <Code className="inline-flex items-center gap-1">
-                    {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/langfr-338px-Flag_of_Morocco.svg.png" style={{width:16, height:"auto"  }} alt="morocco flag"/>*/}
-                    Morocco
-                </Code>.     
-              
+              </Link> {" "}.
             </p>
           </div>
           <div className="flex-[2] max-md:m-auto ml-auto">

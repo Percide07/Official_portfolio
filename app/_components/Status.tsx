@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import heyme from "@/app/_components/icons/heyme.jpg";
+import loreal from "@/app/_components/icons/loreal.png";
+import upwork from "@/app/_components/icons/upwork.png";
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section"
-import { BriefcaseBusiness, Mails, MessageCircle, PillBottle} from "lucide-react";
+import { BriefcaseBusiness, Mails, MessageCircle, PillBottle, Contact, BookCheck, Camera, CookingPot} from "lucide-react";
 import my_face from "./icons/my_face.jpeg";
 import { SideProject, SideProjectProps } from "./SideProject";
 import { ContactCard } from "./ContactCard";
@@ -22,7 +25,7 @@ export const Status = () => {
 
         <div className="flex-[3] w-full"> 
             <Card className="w-full p-4 flex flex-col gap-2 w-full">
-                <p className="text-lg text-muted-foreground">Side, fun projects.</p>
+                <p className="text-lg text-muted-foreground">Projects.</p>
                 <div className="flex flex-col gap-4">
                         {SIDE_PROJECTS.map((project,index)=>(
                             <SideProject
@@ -72,39 +75,45 @@ export const Status = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
-        Logo: MessageCircle,
-        title: "Portfolio",
-        description: "A showcase of my work and projects.",
+        Logo: Camera,
+        title: "Build Stock Photo Generator ",
+        description: "FullStack Application Using Spring AI.",
         url: "/",
     },
     {
-        Logo: PillBottle,
-        title: "Portfolio",
-        description: "A showcase of my work and projects.",
+        Logo: Contact,
+        title: "Contact List",
+        description: "FullStack Project with React Js | SpringBoot.",
         url: "/",
     },
     {
         Logo: Mails,
-        title: "Portfolio",
-        description: "A showcase of my work and projects.",
+        title: "RealTime Chat App",
+        description: "FullStack MERN project.",
+        url: "/",
+    },
+    {
+        Logo: CookingPot,
+        title: "RestaurantSimplon",
+        description: "Back-end project with Node Js | Express | CSRF.",
         url: "/",
     },
     {
         Logo: BriefcaseBusiness,
         title: "Portfolio",
-        description: "A showcase of my work and projects.",
+        description: "My personal portfolio with NextJs.",
         url: "/",
     },
     {
-        Logo: BriefcaseBusiness,
-        title: "Portfolio",
-        description: "A showcase of my work and projects.",
+        Logo: MessageCircle,
+        title: "ChatApp",
+        description: "Online chat app with Swing | SpringBoot | Websocket.",
         url: "/",
     },
     {
-        Logo: BriefcaseBusiness,
-        title: "Portfolio",
-        description: "A showcase of my work and projects.",
+        Logo: PillBottle,
+        title: "CRUD App",
+        description: "CRUD App with Spring Boot | Spring MVC | MySQL | Thymeleaf.",
         url: "/",
     }
 ]
@@ -121,26 +130,26 @@ const WORKS: WorkProps[] = [
         freelance: true,
     },
     {
-        image: "",
-        title: "Project 2",
-        role: "Product Designer",
-        date: "2021",
+        image: upwork,
+        title: "UpWork",
+        role: "Data Entry Specialist",
+        date: "Sep-2022 March-2023",
         url: "/",
         freelance: true,
     },
     {
-        image: "",
-        title: "Project 3",
-        role: "UI/UX Designer",
-        date: "2020",
+        image: heyme,
+        title: "Heyme",
+        role: "Reporting Officer & Insurance Relations Officer",
+        date: "Oct-2020 March-2022",
         url: "/",
         freelance: false,
     },
     {
-        image: "",
-        title: "Project 3",
-        role: "UI/UX Designer",
-        date: "2020",
+        image: loreal,
+        title: "L'Oréal",
+        role: "Administrative Officer",
+        date: "March-2020 June-2020",
         url: "/",
         freelance: false,
     },
